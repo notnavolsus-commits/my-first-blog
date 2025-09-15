@@ -8,16 +8,12 @@
 <div>
     <h1><a href="/">This is a story of my life</a></h1>
 </div>
-
-<div>
-    <p>Published 23.89.67</p>
-    <h2><a href="">My date of born</a></h2>
-    <p>Ha ha ha</p>
-</div>
-<div>
-    <p>published 445.7t</p>
-    <h2><a href="">My life</a></h2>
-    <p>I live my life</p>
-</div>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 </body>
 </html>
