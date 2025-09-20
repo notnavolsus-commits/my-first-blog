@@ -54,3 +54,20 @@ h1, h2, h3, h4 {
 .post h2 a, .post h2 a:visited {
     color: #000000;
 }
+
+#logout {
+    font-family: 'Lobster', cursive;
+}
+
+small a,
+small a:hover,
+small a:visited {
+    font-size: 15pt;
+    color: #ffffcc;
+    text-decoration: none;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
+}
+
